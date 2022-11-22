@@ -23,7 +23,7 @@ const Wrapper = styled.div`
 	gap: ${Spaces.TWO};
 	padding: ${Spaces.THREE} ${Spaces.TWO};
 	background-color: ${Colors.BG_BLACK};
-	border-radius: ${BorderRadiuses.ONE};
+	border-radius: ${BorderRadiuses.TWO};
 	height: 400px;
 	max-width: 240px;
     `;

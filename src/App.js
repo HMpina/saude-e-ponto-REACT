@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { NormalizeStyles } from "./shared/NormalizeStyles";
 
 import Home from "./screens/Home";
-import Login from "./screens/Login";
+import {Login} from "./screens/Login";
 
 import Axios from 'axios';
 import { configure } from 'axios-hooks';

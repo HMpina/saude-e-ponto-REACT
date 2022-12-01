@@ -42,7 +42,6 @@ height: 20px;
 
 
 export function SideBar() {
-    const navigate = useNavigate();
 	return (
 		<Wrapper>
 			<Icon />
@@ -69,5 +68,6 @@ export function SideBar() {
                 2TINOR-2022
             </SideBarTextTwo>
 		</Wrapper>
+
 	);
 }

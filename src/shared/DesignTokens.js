@@ -54,7 +54,7 @@ export const Spaces = {
 	SEVEN: '56px',
 	EIGHT: '64px',
 	NINE: '72px',
-	TEN: '80px',
+	TEN: '200px',
 };
 export const BorderRadiuses = {
 	ONE:'4px',

@@ -13,7 +13,7 @@ export const SideBarTextOne = styled.span`
 	font-size: ${FontSizes.ONE_QUARTER};
 	color: ${(props) => props.color};
 	margin: 0;
-	padding: 0;
+	padding: 10px;
 `;
 SideBarTextOne.defaultProps = {
 	color: Colors.NEUTRAL_WHITE,

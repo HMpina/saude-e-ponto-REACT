@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { SideBar } from "../common-components/SideBar/SideBar";
 import styled from "styled-components";
 import { Colors } from "../shared/DesignTokens";
 import { Flex, Box } from "reflexbox";
@@ -17,8 +16,8 @@ const FoodGrid = styled(Box)`
   grid-template-columns: 1fr;
   gap: ${Spaces.ONE_HALF};
   @media (min-width: 1024px) {
-    grid-template-columns: 0.5fr;
-    gap: ${Spaces.TWO};
+    grid-template-columns: 1fr;
+    gap: ${Spaces.ONE};
   }
 `;
 
@@ -50,26 +49,20 @@ export default function Home() {
     <>
       <Flex
         width={["100%", "auto"]}
-        mx={[Spaces.None, "auto"]}
+        height={["100%", "auto"]}
+        mx={[Spaces.None, Spaces.None]}
         mt={[Spaces.None, Spaces.None]}
-        px={[Spaces.ONE, Spaces.NONE]}
-        mb={[Spaces.TWO, Spaces.FOUR]}
+        mb={[Spaces.NONE, Spaces.NONE]}
         bg={[Colors.GRAY_200]}
+        col={3}
       >
-        <Box sx={{ display: "flex" }}>
-          <SideBar />
-        </Box>
-        <Box>
+        <Box col={2} px={4}>
+        <Box py={4}>
             <HeadingOne>Bom dia, Username!</HeadingOne>
-            <HeadingOne>Cards</HeadingOne>
-            <HeadingOne>informe de saude</HeadingOne>
-            <HeadingOne>data</HeadingOne>
-            <HeadingOne>imagem</HeadingOne>
+            <HeadingOne>Hoje é FERIADO, aproiveite para preparar um alimento saudável</HeadingOne>
           </Box>
-
-        <Box>
-          <HeadingOne>Sugestão de lanche que tenha:</HeadingOne>
-          <Box sx={{ display: "flex" }}>
+          <HeadingOne>Buscar sugestão de lanche que tenha:</HeadingOne>
+          <Box py={3} sx={{ display: "flex" }}>
             <Box>
               <SearchField
                 onKeyUp={handleUpdateSearchValue}

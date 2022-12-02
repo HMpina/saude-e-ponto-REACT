@@ -6,15 +6,16 @@ import {
 	FontSizes,
 	FontWeights,
 } from '../../shared/DesignTokens';
-export const SideBarTextTwo = styled.span`
+export const HeadingTwo = styled.h2`
 	font-family: ${FontFamilies.PRIMARY};
-	font-weight: ${FontWeights.REGULAR};
+	font-weight: ${FontWeights.BOLD};
 	line-height: ${FontLineHeights.MEDIUM};
-	font-size: ${FontSizes.ONE_HALF};
+	font-size: ${FontSizes.THREE};
+    justify-content: center;
 	color: ${(props) => props.color};
 	margin: 0;
-	padding: 10px;
-	`;
-SideBarTextTwo.defaultProps = {
+	padding: 0;
+`;
+HeadingTwo.defaultProps = {
 	color: Colors.NEUTRAL_WHITE,
 };

@@ -20,13 +20,13 @@ export function FoodCard({ name, size, sizeMeasure, ingredients, brand }) {
             <strong>{name}</strong>
           </HeadingOne>
           <HeadingOne as="div" color={Colors.GRAY_700}>
+            <strong>Marca: </strong> {brand}
+          </HeadingOne>
+          <HeadingOne as="div" color={Colors.GRAY_700}>
             <strong>1 porção = </strong> {size} {sizeMeasure}
           </HeadingOne>
           <HeadingOne as="div" color={Colors.GRAY_700}>
             <strong>Ingredientes: </strong> {ingredients}
-          </HeadingOne>
-          <HeadingOne as="div" color={Colors.GRAY_700}>
-            <strong>Marca: </strong> {brand}
           </HeadingOne>
         </Box>
       </InformationGrid>

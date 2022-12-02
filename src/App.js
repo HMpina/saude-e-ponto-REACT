@@ -6,6 +6,8 @@ import {Login} from "./screens/Login";
 
 import Axios from 'axios';
 import { configure } from 'axios-hooks';
+import { Header } from "./common-components/Header/Header";
+import { Footer } from "./common-components/Footer/Footer";
 
 
 const axios = Axios.create({
@@ -18,6 +20,7 @@ function App() {
     <>
 
       <NormalizeStyles />
+      <Header />
         <BrowserRouter>
           <Routes>
             <Route index path="/" element={<Login />} />
@@ -25,6 +28,7 @@ function App() {
             <Route path="*" element={<>No Match</>} />
           </Routes>
         </BrowserRouter>
+        <Footer />
         
     </>
   );
